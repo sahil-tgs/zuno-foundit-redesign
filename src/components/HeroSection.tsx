@@ -1,7 +1,7 @@
 // HeroSection.tsx
 import React from 'react';
 import { Container, Box } from '@mui/material';
-import SearchSection from './SearchSection';
+// import SearchSection from './SearchSection';
 import CurveBackground from './CurveBackground'; // Import the CurveBackground component
 import './Components.css'; // Import the CSS file for styling
 

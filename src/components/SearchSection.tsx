@@ -121,7 +121,7 @@ const SearchSection: React.FC = () => {
   select
   SelectProps={{
     displayEmpty: true,
-    renderValue: (selected) => selected || 'Experience level',
+    // renderValue: (selected) => selected || 'Experience level',
     MenuProps: {
       anchorOrigin: {
         vertical: 'bottom',
@@ -131,7 +131,7 @@ const SearchSection: React.FC = () => {
         vertical: 'top',
         horizontal: 'left',
       },
-      getContentAnchorEl: null,
+      // getContentAnchorEl: null,
     },
   }}
 >
