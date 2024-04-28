@@ -1,15 +1,25 @@
-.curve-background-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100vw;
-  }
-  
-  .curve-background-svg {
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  
+/* CurveBackground.css */
+.curve-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90vw;
+  height: auto;
+  z-index: -1; /* Ensure it's behind other content */
+  opacity: 69%;
+}
+
+.fundit-icon {
+  width: 70vw;
+  height: auto;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center the icon */
+  z-index: -1;
+  filter: blur(50px); /* Apply blur effect */
+}
+
+.curveBg{
+  max-width: 100vw;
+}

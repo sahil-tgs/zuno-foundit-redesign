@@ -1,3 +1,5 @@
+//SearchSection.tsx
+
 import React, { useState } from 'react';
 import { Box, TextField, Button, InputAdornment, MenuItem } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
@@ -30,7 +32,7 @@ const SearchSection: React.FC = () => {
       alignItems="center"
       justifyContent="center"
       mb={4}
-      width="100vw"
+      width="80vw"
       sx={{
         '& > *': {
           m: 2, // Add space between each TextField

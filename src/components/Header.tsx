@@ -11,7 +11,7 @@ const buttonStyle = {
 
 const Header: React.FC = () => {
   return (
-    <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
+    <AppBar position="static" style={{ maxWidth:'100vw', background: 'transparent', boxShadow: 'none' }}>
       <Toolbar>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <IconButton

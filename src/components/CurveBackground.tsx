@@ -1,17 +1,15 @@
+// CurveBackground.tsx
 import React from 'react';
-import './Components.css'; // Import the external CSS file
+import './Components.css'; // Import the CSS file for styling
 
 const CurveBackground: React.FC = () => {
   return (
-    <div className="curve-background-container">
-      {/* SVG background */}
+    <div className="curve-background">
       <svg
-        width="1280"
+        width="98.5vw"
         height="768"
-        viewBox="0 0 1280 768"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="curve-background-svg"
       >
         <path
           id="curveBg"
