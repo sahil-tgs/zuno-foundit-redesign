@@ -11,7 +11,18 @@ const buttonStyle = {
 
 const Header: React.FC = () => {
   return (
-    <AppBar position="static" style={{ maxWidth:'100vw', background: 'transparent', boxShadow: 'none' }}>
+    <AppBar
+    position="static"
+    sx={{
+      minWidth: '94vw', // Adjust the minimum width
+      paddingTop: '10px', // Padding for the top
+      paddingLeft: '10px', // Padding for the left
+      paddingRight: '10px', // Padding for the right
+      paddingBottom: '10px', // Padding for the bottom
+      background: 'transparent',
+      boxShadow: 'none',
+    }}
+  >
       <Toolbar>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <IconButton

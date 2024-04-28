@@ -1,6 +1,7 @@
-// App.tsx
 import React from 'react';
-import { Container } from '@mui/material';
+import { Container, Box } from '@mui/material';
+import Header from './components/Header';
+import SearchSection from './components/SearchSection';
 import HeroSection from './components/HeroSection';
 import GetStartedSection from './components/GetStartedSection';
 import EmployersSection from './components/EmployersSection';
@@ -11,7 +12,9 @@ import './App.css'; // Import the App.css file
 
 const App: React.FC = () => {
   return (
-    <div className="app-container"> {/* Add class name to the wrapping div */}
+    <Box display="flex" flexDirection="column" alignItems="center">
+      <Header />
+      <SearchSection />
       <HeroSection />
       <Container maxWidth="lg">
         <GetStartedSection />
@@ -20,7 +23,7 @@ const App: React.FC = () => {
         <FeaturedSection />
       </Container>
       <Footer />
-    </div>
+    </Box>
   );
 };
 

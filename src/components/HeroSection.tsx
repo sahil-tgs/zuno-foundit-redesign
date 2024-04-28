@@ -1,7 +1,6 @@
 // HeroSection.tsx
 import React from 'react';
 import { Container, Box } from '@mui/material';
-import Header from './Header';
 import SearchSection from './SearchSection';
 import CurveBackground from './CurveBackground'; // Import the CurveBackground component
 import './Components.css'; // Import the CSS file for styling
@@ -21,8 +20,6 @@ const HeroSection: React.FC = () => {
       </div>
       {/* Header and SearchSection */}
       <Container maxWidth="lg">
-        <Header />
-        <SearchSection />
       </Container>
     </Box>
   );
