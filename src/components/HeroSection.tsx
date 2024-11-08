@@ -1,27 +1,30 @@
-// HeroSection.tsx
 import React from 'react';
-import { Container, Box } from '@mui/material';
-// import SearchSection from './SearchSection';
-import CurveBackground from './CurveBackground'; // Import the CurveBackground component
-import './Components.css'; // Import the CSS file for styling
+import CurveBackground from './CurveBackground';
+import SearchSection from './SearchSection';
+import Header from './Header';
+import './Components.css';
 
 const HeroSection: React.FC = () => {
   return (
-    <Box className="hero-section"> {/* Add class name to the wrapping Box */}
-      {/* SVG background */}
+    <div className="hero-section">
+      <Header />
+      <CurveBackground />
       <img
-        src="/funditIconBig.svg" // Replace with the correct path to your SVG file
+        src="/funditIconBig.svg"
         alt="Fundit Icon Big"
-        className="fundit-icon" // Add class name to apply styles
+        className="fundit-icon"
       />
-      {/* Curve background (for blur effect) */}
-      <div className="curve-background-container">
-        <CurveBackground />
+      <div className="hero-content">
+        <SearchSection />
+        <h1 className="hero-title">Find the Job that is perfect for You</h1>
+        <h2 className="hero-subtitle">
+          Let's make your job hunt easier. Search, apply, and succeed with Foundit.
+        </h2>
       </div>
-      {/* Header and SearchSection */}
-      <Container maxWidth="lg">
-      </Container>
-    </Box>
+      <img src="/leftSide.svg.svg" alt="Job listings" className="hero-image hero-image-left" />
+      <img src="/rightSide.svg.svg" alt="Job seeker" className="hero-image hero-image-right" />
+      <img src="/subHeroRight.svg" alt="Scroll down" className="scroll-down-arrow" />
+    </div>
   );
 };
 

@@ -13,15 +13,15 @@ import './App.css'; // Import the App.css file
 const App: React.FC = () => {
   return (
     <Box display="flex" flexDirection="column" alignItems="center">
-      <Header />
-      <SearchSection />
+      {/* <Header /> */}
+      {/* <SearchSection /> */}
       <HeroSection />
-      <Container maxWidth="lg">
+      {/* <Container maxWidth="lg">
         <GetStartedSection />
         <EmployersSection />
         <PopularSearches />
         <FeaturedSection />
-      </Container>
+      </Container> */}
       <Footer />
     </Box>
   );

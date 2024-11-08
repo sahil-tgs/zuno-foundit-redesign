@@ -32,7 +32,7 @@ const SearchSection: React.FC = () => {
       my={4} // Add margin on y-axis for spacing
       width="100vw"
       sx={{
-        margin: '8vh 0px 20vh 0px',
+        margin: '8vh 0px 5vh 0px',
       }}
     >
       {/* Job title/role search TextField */}
