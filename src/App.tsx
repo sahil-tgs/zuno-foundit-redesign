@@ -1,11 +1,12 @@
+// src/App.tsx
 import React from 'react';
 import {Box} from '@mui/material';
 // import { Container, Box } from '@mui/material';
 // import Header from './components/Header';
 // import SearchSection from './components/SearchSection';
 import HeroSection from './components/HeroSection';
-// import GetStartedSection from './components/GetStartedSection';
-// import EmployersSection from './components/EmployersSection';
+import GetStartedSection from './components/GetStartedSection';
+import EmployersSection from './components/EmployersSection';
 // import PopularSearches from './components/PopularSearches';
 // import FeaturedSection from './components/FeaturedSection';
 import Footer from './components/Footer';
@@ -17,12 +18,8 @@ const App: React.FC = () => {
       {/* <Header /> */}
       {/* <SearchSection /> */}
       <HeroSection />
-      {/* <Container maxWidth="lg">
-        <GetStartedSection />
+      <GetStartedSection />
         <EmployersSection />
-        <PopularSearches />
-        <FeaturedSection />
-      </Container> */}
       <Footer />
     </Box>
   );
