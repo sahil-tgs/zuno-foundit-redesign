@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import CurveBackground from './CurveBackground';
 import SearchSection from './SearchSection';
 import Header from './Header';

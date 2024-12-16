@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import FooterNavGroup from './FooterNavGroup';
 import { Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
 import './Footer.css';
