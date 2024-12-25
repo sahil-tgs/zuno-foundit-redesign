@@ -1,4 +1,5 @@
-// import React from 'react';
+// src/components/FeatureCards.tsx
+
 import './FeatureCards.css';
 
 const FeatureCards = () => {

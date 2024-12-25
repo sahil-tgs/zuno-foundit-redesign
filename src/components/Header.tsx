@@ -1,34 +1,38 @@
-// Header.tsx
-import React from 'react';
+// src/components/Header.tsx
+import React, { useState } from 'react';
 import { AppBar, Toolbar, Button, Box, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import SideMenu from './SideMenu';
 import logo from '../../public/logo.svg';
 
 const buttonStyle = {
   color: 'black',
-  fontWeight: 'bold', // Added bold font weight for buttons
+  fontWeight: 'bold',
 };
 
 const Header: React.FC = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   return (
     <AppBar
-    position="static"
-    sx={{
-      minWidth: '94vw', // Adjust the minimum width
-      paddingTop: '10px', // Padding for the top
-      paddingLeft: '10px', // Padding for the left
-      paddingRight: '10px', // Padding for the right
-      paddingBottom: '10px', // Padding for the bottom
-      background: 'transparent',
-      boxShadow: 'none',
-    }}
-  >
+      position="static"
+      sx={{
+        minWidth: '94vw',
+        paddingTop: '10px',
+        paddingLeft: '10px',
+        paddingRight: '10px',
+        paddingBottom: '10px',
+        background: 'transparent',
+        boxShadow: 'none',
+      }}
+    >
       <Toolbar>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <IconButton
             size="large"
             edge="start"
             aria-label="menu"
+            onClick={() => setIsDrawerOpen(true)}
             sx={{ mr: 2, color: 'black' }}
           >
             <MenuIcon />
@@ -46,6 +50,11 @@ const Header: React.FC = () => {
           <Button color="inherit" style={buttonStyle}>Register</Button>
         </Box>
       </Toolbar>
+
+      <SideMenu 
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
+      />
     </AppBar>
   );
 };

@@ -1,3 +1,5 @@
+// src/components/CurveBackground2.tsx
+
 import React from 'react';
 import './CurveBackground2.css';
 

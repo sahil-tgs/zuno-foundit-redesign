@@ -1,3 +1,5 @@
+// src/components/FooterNavGroup.tsx
+
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import './Footer.css';

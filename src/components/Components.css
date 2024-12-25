@@ -1,3 +1,5 @@
+/* src/components/Components.css */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +10,27 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  width: 100vw;
+  position: relative;
 }
 
+.MuiDrawer-paper {
+  transition: all 0.3s ease-in-out !important;
+}
+
+.MuiDrawer-root {
+  & .MuiBackdrop-root {
+    ~ * {
+      html, body {
+        padding-right: 17px; /* Typical scrollbar width */
+      }
+    }
+  }
+}
+
+.MuiListItemButton-root:hover {
+  background-color: rgba(124, 23, 196, 0.05) !important;
+}
 .hero-section {
   position: relative;
   width: 100%;

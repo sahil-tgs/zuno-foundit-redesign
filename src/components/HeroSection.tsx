@@ -1,4 +1,4 @@
-// import React from 'react';
+// src/components/HeroSection.tsx
 import CurveBackground from './CurveBackground';
 import SearchSection from './SearchSection';
 import Header from './Header';
